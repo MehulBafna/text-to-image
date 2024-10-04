@@ -2,4 +2,3 @@ streamlit
 torch
 diffusers
 Pillow
-gunicorn
