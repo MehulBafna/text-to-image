@@ -1,6 +1,7 @@
 from PIL import Image
 from diffusers import StableDiffusionPipeline
 import streamlit as st
+import torch
 #import gunicorn
 
 # Function to generate image from text
