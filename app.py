@@ -25,3 +25,13 @@ def main():
     st.title("Text to Image Generator")
 
     prompt = st.text_input("Enter your text prompt:")
+    if st.button("Generate Image"):
+        if prompt:
+            with st.spinner("Generating image..."):
+                generated_image = generate_image_from_text(prompt)
+                st.image(generated_image, caption="Generated Image", use_column_width=True)
+        else:
+            st.error("Please enter a prompt.")
+
+if __name__ == "__main__":
+    main()
