@@ -2,7 +2,7 @@ import torch
 from PIL import Image
 from diffusers import StableDiffusionPipeline
 import streamlit as st
-import gunicorn
+#import gunicorn
 
 # Function to generate image from text
 def generate_image_from_text(prompt, output_image_path="output_image.png"):
